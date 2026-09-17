@@ -307,7 +307,7 @@ nav.main-nav a.active {
 }
 
 .accordion-panel.open {
-  max-height: 600px;
+  max-height: 2000px;
   padding: 16px;
 }
 

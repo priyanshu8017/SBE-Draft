@@ -414,3 +414,71 @@ footer.site-footer {
     justify-content: center;
   }
 }
+
+/* Intro heading and paragraph */
+.industry-intro {
+  margin-bottom: 30px;
+}
+
+.industry-intro h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.industry-intro p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Image and text row */
+.industry-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+/* Image size */
+.industry-row img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Text area */
+.industry-text {
+  flex: 1;
+}
+
+.industry-text h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.industry-text p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Reverse the second row */
+.industry-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 650px) {
+  .industry-row,
+  .industry-row.reverse {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .industry-row img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+}
